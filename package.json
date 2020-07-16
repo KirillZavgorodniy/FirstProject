@@ -4,7 +4,8 @@
   "description": "FirstProject",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,10 @@
     "url": "https://github.com/KirillZavgorodniy/FirstProject/issues"
   },
   "homepage": "https://github.com/KirillZavgorodniy/FirstProject#readme",
-  "dependencies": {},
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize.scss": "^0.1.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",

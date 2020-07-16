@@ -1,6 +1,7 @@
 .idea/
 build
 node_modules
+gulpfile_true.
 npm-debug.log
 .DS_Store
 ### Windows template
