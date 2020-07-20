@@ -1,0 +1,54 @@
+.work {
+    padding: 110px;
+    background-color: #de2b24;
+    color: #fff;
+
+    &List {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .titleWithBottomLine {
+        &:after {
+            background-color: #fff;
+        }
+    }
+
+    &Item {
+        width: 256px;
+        height: 255px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #f35e59;
+        
+        &Name {
+            position: relative;
+            padding: 137px 45px 74px 45px;
+            text-align: center;            
+        
+            :before {
+                @include sprite($work-item);
+                @include centerer-x();
+
+                content: '';
+                top: 75px;
+            }
+        }
+
+    }
+
+    &Name {
+        font-size: 1.625rem;
+    }
+
+    &Picture {
+        width: 100%;
+        height: 100%;
+    }
+
+    &Description {
+        font-size: 1rem;
+    }
+}
