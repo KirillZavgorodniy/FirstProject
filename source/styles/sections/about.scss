@@ -2,6 +2,9 @@
     padding: 99px 0 105px;
     text-align: center;
 
+    @media (max-width: 600px) {
+        padding: 40px 0 20px 0;
+    }
 
     &List {
         display: flex;
@@ -12,11 +15,15 @@
     }
 
     &Item {
-        width: 25%;
+        width: 27%;
+
+        @media (max-width: 960px) {
+            width: 100%;
+        }
     }
 
     &Header {
-        margin: 0 0 12px 0;
+        margin: 0 0 6px 0;
         font-size: 1.375rem;
         font-family: $ff-main-bold;
         color: #424242;

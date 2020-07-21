@@ -1,6 +1,17 @@
 .approach {
     padding: 86px 0 94px;
     background-color: #f3f3f3;
+
+    .title {
+        @media (max-width: 985px) {
+          margin-bottom: 35px;
+        }
+    }
+    
+    @media (max-width: 985px) {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
   
     &List {
         margin: 0;
@@ -14,17 +25,34 @@
         box-shadow: -1px -1px 10px 1px rgba(214, 214, 214, 1);
         color: #424242;
         background: #fff;
+
+        @media (max-width: 985px) {
+            padding: 25px 20px;
+        }
+        
             &:nth-child(2n) {
             display: flex;
             flex-direction: row-reverse;
             text-align: right;
-                .approachText {
+            
+            @media (max-width: 700px) {
+                display: block;
                 padding: 70px 90px;
             }
+
+                .approachText {
+                    padding: 70px 90px 55px 90px;
+                    
+                    @media (max-width: 985px) {
+                        padding: 25px 20px;
+                    }
+                }
+
                 .approachStep {
-                right: auto;
-                left: -52px;
-            }
+                    right: auto;
+                    left: -52px;
+                }
+        
         }
     }
   
@@ -34,6 +62,16 @@
         max-height: 236px;
         display: inline-block;
         vertical-align: top;
+
+        @media (max-width: 985px) {
+            max-width: calc(340px / 1.5);
+            max-height: calc(236px / 1.5);
+        }
+
+        @media (max-width: 700px) {
+            margin: auto;
+            display: block;
+        }
     }
   
     &Picture {
@@ -48,12 +86,21 @@
         width: 64%;
         padding: 70px 70px 55px 90px;
         font-size: 0.875rem;
+
+        @media (max-width: 985px) {
+            padding: 25px 20px;
+        }
+      
+          @media (max-width: 700px) {
+            width: 100%;
+            text-align: center;
+        }
     }
   
     &Step {
         @include centerer-y();
   
-        right: -58px;
+        right: -52px;
         width: 103px;
         height: 103px;
         padding-top: 10px;

@@ -3,6 +3,10 @@
     color: #fff;
     background-color: #1287bf;
 
+    @media (max-width: 810px) {
+        padding: 25px;
+    }
+
     .title {
         margin-bottom: 12px;
     }
@@ -43,6 +47,11 @@
     text-align: center;
     background-color: #fff;
 
+    @media (max-width: 810px) {
+        width: 90%;
+        padding: 25px;
+    }
+    
     &Container {
         padding-top: 30px;
     }
