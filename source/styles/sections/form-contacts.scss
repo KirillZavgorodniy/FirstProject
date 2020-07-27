@@ -1,0 +1,121 @@
+.formSection {
+    padding: 110px 0 110px 0;
+    color: #fff;
+    background-color: #1287bf;
+
+    @media (max-width: 810px) {
+        padding: 25px;
+    }
+
+    .title {
+        margin-bottom: 12px;
+    }
+    
+    .titleHeader {
+        font-size: 2.25rem;
+    }
+
+    .titleText {
+        font-size: 1.25rem;
+    }
+
+    .btnDown {
+        position: relative;
+        margin: 18px auto 25px auto;
+        width: 65px;
+        height: 65px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+    }
+
+    .arrowDown {
+        @include centerer-xy();
+        padding: 20px;
+        color: #fff;
+
+        .fa {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.form {
+    position: relative;
+    width: 67%;
+    margin: auto;
+    padding: 50px 50px 66px 50px;
+    border-radius: 3px;
+    color: #828282;
+    text-align: center;
+    background-color: #fff;
+
+    @media (max-width: 810px) {
+        width: 90%;
+        padding: 25px;
+    }
+    
+    &Container {
+        padding-top: 30px;
+    }
+
+    &:before {
+        @include centerer-x();
+
+        content: '';
+        border: 30px solid transparent;
+        border-bottom: 30px solid #fff;
+        top: -59px;
+    }
+
+    &CloseButton {
+        position: absolute;
+        right: -16px;
+        top: -27px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #ffffff;
+        text-align: center;
+        font-size: 2rem;
+        color: #ffffff;
+        background: #de2b24;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: lighten(#de2b24, 10%); 
+        }
+
+        &Text {
+            vertical-align: top;
+        }
+    }
+
+    &Text {
+        margin-bottom: 33px;
+        font-size: 0.9375rem;
+        line-height: 1.5;
+    }
+
+    &Fields {
+        margin-bottom: 36px;
+    }
+
+    &Input {
+        width: 76%;
+        display: block;
+        margin: auto auto 8px auto;
+        padding: 18px 20px;
+        border: 1px solid #d8d8d8;
+        border-radius: 3px;
+        font-size: 0.875rem;
+
+        &:focus {
+            box-shadow: 0 0 5px 1px rgba(18, 135, 191, 0.66);
+        }
+    }
+
+    .button {
+        padding: 15px 30px;
+        border: none;
+    }
+}

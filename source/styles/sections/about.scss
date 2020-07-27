@@ -1,0 +1,39 @@
+.about {
+    padding: 99px 0 105px;
+    text-align: center;
+
+    @media (max-width: 600px) {
+        padding: 40px 0 20px 0;
+    }
+
+    &List {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0 50px;
+    }
+
+    &Item {
+        width: 27%;
+
+        @media (max-width: 960px) {
+            width: 100%;
+        }
+    }
+
+    &Header {
+        margin: 0 0 6px 0;
+        font-size: 1.375rem;
+        font-family: $ff-main-bold;
+        color: #424242;
+    }
+
+    &Description {
+        margin-top: 0;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        color: #5c5c5c;
+    }
+
+}

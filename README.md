@@ -25,4 +25,3 @@
 
 >npm install
 
-"# FirstProject" 
